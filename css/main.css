@@ -9,3 +9,40 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
 }
+.main-header + * {
+    margin-top: 6rem;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0.2rem 0.4rem #0002;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.main-header .logo {
+    height: 3rem;
+}
+.main-header .main-nav {
+    display: flex;
+    gap: 1rem;
+}
+.main-header .link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+.main-header .link:hover {
+    background-color: #ddd;
+}
+.main-header .link.active {
+    background-color: #ccc;
+}
+/* .link + .link {
+    background-color: red;
+} */
