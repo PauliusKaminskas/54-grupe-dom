@@ -6,9 +6,7 @@ console.log(titleDOM.textContent.length);
 console.log(titleDOM.innerText.length);
 
 titleDOM.textContent = 'Pomidoras';
-titleDOM.innerText = 'Agurkas';
-
-console.clear();
+/* titleDOM.innerText = 'Agurkas'; */
 
 const liDOM = document.querySelectorAll('ul li');
 console.log(liDOM);
