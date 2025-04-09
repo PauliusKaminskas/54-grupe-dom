@@ -18,7 +18,7 @@ export function header() {
         if (link.href === currentPage) {
             activePage = 'active';
         }
-        linksHTML += `<a class="link active" href="${link.href}">${link.text}</a>`;
+        linksHTML += `<a class="link ${activePage}" href="${link.href}">${link.text}</a>`;
     }
     /* const body = document.querySelector('body'); */
     /* const body = document.body; */
