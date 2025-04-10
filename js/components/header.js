@@ -7,12 +7,12 @@ export function header() {
     }
 
     const menu = [
-        { text: 'Home', href: '/' },
-        { text: 'text', href: '/text' },
-        { text: 'Food', href: '/food' },
-        { text: 'Darzas', href: '/darzas' },
-        { text: 'Header', href: '/header' },
-        { text: 'Click', href: '/click' },
+        { text: 'Home', href: './' },
+        { text: 'text', href: './text' },
+        { text: 'Food', href: './food' },
+        { text: 'Darzas', href: './darzas' },
+        { text: 'Header', href: './header' },
+        { text: 'Click', href: './click' },
     ];
 
     const currentPage =
