@@ -8,7 +8,7 @@ export function header() {
 
     const menu = [
         { text: 'Home', href: './' },
-        { text: 'text', href: './text' },
+        { text: 'Text', href: './text' },
         { text: 'Food', href: './food' },
         { text: 'Darzas', href: './darzas' },
         { text: 'Header', href: './header' },
