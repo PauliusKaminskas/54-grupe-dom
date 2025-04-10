@@ -2,7 +2,7 @@ export function header() {
     if (location.hostname !== 'localhost') {
         document.head.insertAdjacentHTML(
             'afterbegin',
-            '<base href="https://github.com/PauliusKaminskas/54-grupe-dom">'
+            '<base href="https://pauliuskaminskas.github.io/54-grupe-dom/">'
         );
     }
 
@@ -31,7 +31,7 @@ export function header() {
     /* const body = document.querySelector('body'); */
     /* const body = document.body; */
     const HTML = ` <header class="main-header">
-            <img class="logo" src="../food/pizza.png" alt="logo" />
+            <img class="logo" src="/img/logo.png" alt="logo" />
             <nav class="main-nav">${linksHTML}</nav>
         </header>`;
     document.body.insertAdjacentHTML('afterbegin', HTML);
