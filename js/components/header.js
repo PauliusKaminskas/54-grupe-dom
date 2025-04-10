@@ -1,18 +1,19 @@
 export function header() {
     if (location.hostname !== 'localhost') {
-        document.head.insertAdjacentHTML(
-            'afterbegin',
-            '<base href="https://pauliuskaminskas.github.io/54-grupe-dom/">'
-        );
+        base = 'https://pauliuskaminskas.github.io/54-grupe-dom/';
     }
+    document.head.insertAdjacentHTML(
+        'afterbegin',
+        '<base href="http://localhost:5408">'
+    );
 
     const menu = [
-        { text: 'Home', href: './' },
-        { text: 'Text', href: './text' },
-        { text: 'Food', href: './food' },
-        { text: 'Darzas', href: './darzas' },
-        { text: 'Header', href: './header' },
-        { text: 'Click', href: './click' },
+        { text: 'Home', href: '/' },
+        { text: 'Text', href: '/text/' },
+        { text: 'Food', href: '/food/' },
+        { text: 'Darzas', href: '/darzas/' },
+        { text: 'Header', href: '/header/' },
+        { text: 'Click', href: '/click/' },
     ];
 
     const currentPage =
