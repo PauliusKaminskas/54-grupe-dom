@@ -31,7 +31,7 @@ export function header() {
     /* const body = document.querySelector('body'); */
     /* const body = document.body; */
     const HTML = ` <header class="main-header">
-            <img class="logo" src="/img/logo.png" alt="logo" />
+            <img class="logo" src="./img/logo.png" alt="logo" />
             <nav class="main-nav">${linksHTML}</nav>
         </header>`;
     document.body.insertAdjacentHTML('afterbegin', HTML);
