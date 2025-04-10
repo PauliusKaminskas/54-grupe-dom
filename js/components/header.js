@@ -1,4 +1,11 @@
 export function header() {
+    if (location.hostname !== 'localhost') {
+        document.head.insertAdjacentHTML(
+            'afterbegin',
+            '<base href="https://github.com/PauliusKaminskas/54-grupe-dom">'
+        );
+    }
+
     const menu = [
         { text: 'Home', href: '/' },
         { text: 'text', href: '/text' },
