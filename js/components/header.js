@@ -1,11 +1,18 @@
 export function header() {
+    let base = 'http://localhost:5408/';
+    let projectName = '';
     if (location.hostname !== 'localhost') {
+        projectName = '/54-grupe-dom';
+        base = 'https://front-end-by-rimantas.github.io/54-grupe-dom/';
+    }
+    document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
+    /*     if (location.hostname !== 'localhost') {
         base = 'https://pauliuskaminskas.github.io/54-grupe-dom/';
     }
     document.head.insertAdjacentHTML(
         'afterbegin',
         '<base href="http://localhost:5408">'
-    );
+    ); */
 
     const menu = [
         { text: 'Home', href: '/' },
