@@ -23,15 +23,15 @@ export function header() {
         { text: 'Click', href: '/click/' },
     ];
 
-    const currentPage =
+    /* const currentPage =
         location.pathname.length > 1 && location.pathname.at(-1) === '/'
             ? location.pathname.slice(0, -1)
-            : location.pathname;
+            : location.pathname; */
     let linksHTML = '';
 
     for (const link of menu) {
         let activePage = '';
-        if (link.href === currentPage) {
+        if (projectName + link.href === location.pathname) {
             activePage = 'active';
         }
         linksHTML += `<a class="link ${activePage}" href=".${link.href}">${link.text}</a>`;
